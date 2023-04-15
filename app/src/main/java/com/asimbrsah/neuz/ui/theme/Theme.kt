@@ -1,4 +1,4 @@
-package com.asimbrsah.neuz.theme
+package com.asimbrsah.neuz.ui.theme
 
 import android.app.Activity
 import android.os.Build

@@ -3,8 +3,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    kotlin("kapt")
     id("com.google.dagger.hilt.android")
+    kotlin("kapt")
 }
 
 android {
@@ -35,8 +35,8 @@ android {
         }
         getByName("release") {
             isDebuggable = false
-            isMinifyEnabled = true
-            isShrinkResources = true
+            isMinifyEnabled = false
+            isShrinkResources = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -88,6 +88,27 @@ dependencies {
     /* Hilt related */
     implementation(AppDependencies.hilt)
     kapt(AppDependencies.hiltCompile)
+
+    /* Retrofit related */
+    implementation(AppDependencies.retrofit)
+    implementation(AppDependencies.retrofitConvertor)
+
+    /* Logging Interceptor related */
+    implementation(AppDependencies.loggingInterceptor)
+
+    /* Co-routine related */
+    implementation(AppDependencies.coroutine)
+
+    /* Room related */
+    implementation(AppDependencies.room)
+    // To use Kotlin annotation processing tool (kapt)
+    kapt(AppDependencies.roomAnnotation)
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation(AppDependencies.roomWithCoroutine)
+
+    /* Glide related */
+    implementation(AppDependencies.glide)
+    kapt(AppDependencies.glideAnnotation)
 
     /* Testing related */
     testImplementation(AppDependencies.testLibraries)

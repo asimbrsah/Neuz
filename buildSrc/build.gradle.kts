@@ -4,6 +4,6 @@ plugins {
     `kotlin-dsl`
 }
 
-repositories {
+@Suppress("JcenterRepositoryObsolete", "DEPRECATION") repositories {
     jcenter()
 }

@@ -13,6 +13,21 @@ object Versions {
     // hilt
     val hilt = "2.44"
 
+    // retrofit
+    val retrofit = "2.6.1"
+
+    // loggingInterceptor
+    val loggingInterceptor = "3.12.3"
+
+    // co-routine
+    val coroutine = "1.6.4"
+
+    // room
+    val room = "2.5.1"
+
+    // glide
+    val glide = "4.10.0"
+
     // test
     val junit = "4.13.2"
     val extJunit = "1.1.5"

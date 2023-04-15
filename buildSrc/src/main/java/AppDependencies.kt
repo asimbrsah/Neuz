@@ -19,6 +19,25 @@ object AppDependencies {
     val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
     val hiltCompile = "com.google.dagger:hilt-android-compiler:${Versions.hilt}"
 
+    // Retrofit
+    val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+    val retrofitConvertor = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
+
+    // Interceptor
+    val loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.loggingInterceptor}"
+
+    // Co-routine
+    val coroutine = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutine}"
+
+    // Room
+    val room = "androidx.room:room-runtime:${Versions.room}"
+    val roomAnnotation = "androidx.room:room-compiler:${Versions.room}"
+    val roomWithCoroutine = "androidx.room:room-ktx:${Versions.room}"
+
+    // Glide
+    val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
+    val glideAnnotation = "com.github.bumptech.glide:compiler:${Versions.glide}"
+
     //test libs
     private val junit = "junit:junit:${Versions.junit}"
     private val extJUnit = "androidx.test.ext:junit:${Versions.extJunit}"
