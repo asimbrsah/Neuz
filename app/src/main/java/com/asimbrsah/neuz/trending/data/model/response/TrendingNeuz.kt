@@ -1,9 +1,12 @@
-package com.asimbrsah.neuz.data.model.response
+package com.asimbrsah.neuz.trending.data.model.response
 
-internal data class Neuz(
-    val status: String? = null,
-    val totalResults: Int? = null,
-    val articles: List<Articles>? = null
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity("trendingNeuz")
+internal data class TrendingNeuz(
+    @PrimaryKey
+    val status: String,
 )
 
 internal data class Articles(

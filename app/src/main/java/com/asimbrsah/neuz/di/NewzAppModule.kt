@@ -1,7 +1,6 @@
-package com.asimbrsah.neuz.di.module
+package com.asimbrsah.neuz.di
 
 import com.asimbrsah.neuz.BuildConfig
-import com.asimbrsah.neuz.data.source.remote.NeuzApiService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -14,9 +13,10 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-internal class NeuzModule {
+class NewzAppModule {
 
     @Provides
+    @Singleton
     fun provideBaseUrl() = "https://newsapi.org/"
 
     @Provides
@@ -42,9 +42,4 @@ internal class NeuzModule {
             .baseUrl(baseUrl)
             .client(okHttpClient)
             .build()
-
-    @Provides
-    @Singleton
-    fun provideApiService(retrofit: Retrofit): NeuzApiService =
-        retrofit.create(NeuzApiService::class.java)
 }
