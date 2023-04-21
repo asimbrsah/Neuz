@@ -1,4 +1,4 @@
-package com.asimbrsah.neuz.trending.data.source.repository
+package com.asimbrsah.neuz.trending.data.source
 
 import com.asimbrsah.neuz.trending.data.model.response.TrendingNeuz
 import com.asimbrsah.neuz.trending.domain.repository.TrendingNeuzRepository

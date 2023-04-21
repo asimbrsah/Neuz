@@ -5,7 +5,7 @@ import androidx.room.Room
 import com.asimbrsah.neuz.trending.domain.repository.TrendingNeuzRepository
 import com.asimbrsah.neuz.trending.data.source.local.TrendingNeuzDataBase
 import com.asimbrsah.neuz.trending.data.source.remote.TrendingNeuzApiService
-import com.asimbrsah.neuz.trending.data.source.repository.TrendingNeuzRepositoryImpl
+import com.asimbrsah.neuz.trending.data.source.TrendingNeuzRepositoryImpl
 import com.asimbrsah.neuz.trending.domain.usecase.GetTrendingNeuz
 import com.asimbrsah.neuz.trending.domain.usecase.TrendingNeuzUseCases
 import dagger.Module
