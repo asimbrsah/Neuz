@@ -1,4 +1,4 @@
-package com.asimbrsah.neuz.trending.presentation.view
+package com.asimbrsah.neuz.f_trending.presentation.view
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

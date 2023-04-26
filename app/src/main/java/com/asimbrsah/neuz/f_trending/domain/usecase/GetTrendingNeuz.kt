@@ -1,7 +1,7 @@
-package com.asimbrsah.neuz.trending.domain.usecase
+package com.asimbrsah.neuz.f_trending.domain.usecase
 
-import com.asimbrsah.neuz.trending.data.model.response.TrendingNeuz
-import com.asimbrsah.neuz.trending.domain.repository.TrendingNeuzRepository
+import com.asimbrsah.neuz.f_trending.domain.model.TrendingNeuz
+import com.asimbrsah.neuz.f_trending.domain.repository.TrendingNeuzRepository
 
 internal class GetTrendingNeuz(private val trendingNeuzRepository: TrendingNeuzRepository) {
 

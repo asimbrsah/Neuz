@@ -1,6 +1,6 @@
-package com.asimbrsah.neuz.trending.data.source.remote
+package com.asimbrsah.neuz.f_trending.data.source.remote
 
-import com.asimbrsah.neuz.trending.data.model.response.TrendingNeuz
+import com.asimbrsah.neuz.f_trending.domain.model.TrendingNeuz
 import retrofit2.http.GET
 
 internal interface TrendingNeuzApiService {

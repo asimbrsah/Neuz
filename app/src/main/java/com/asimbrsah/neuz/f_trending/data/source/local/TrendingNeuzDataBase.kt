@@ -1,13 +1,16 @@
-package com.asimbrsah.neuz.trending.data.source.local
+package com.asimbrsah.neuz.f_trending.data.source.local
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.asimbrsah.neuz.trending.data.model.response.TrendingNeuz
+import androidx.room.TypeConverters
+import com.asimbrsah.neuz.f_trending.domain.model.TrendingArticlesConverter
+import com.asimbrsah.neuz.f_trending.domain.model.TrendingNeuz
 
 @Database(
     entities = [TrendingNeuz::class],
     version = 1
 )
+@TypeConverters(TrendingArticlesConverter::class)
 internal abstract class TrendingNeuzDataBase : RoomDatabase() {
 
     abstract val trendingNeuzDao: TrendingNeuzDao
